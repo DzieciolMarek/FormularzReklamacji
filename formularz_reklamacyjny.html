@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang=pl>
+
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<title>
+		Formularz reklamacyjny
+	
+	</title>
+	
+		
+</head>
+
+	<body>
+		<form action="#" method="get">
+		
+		<p class="tytuł">	Dopisanie zgłoszenia reklamacyjnego </p>
+		
+
+		<article class="czesc1">
+			<p class="naglowek">Reklamujący</p>		
+			<div> 
+				<input type="radio" name="sex" value="Pani"/> Pani
+				<input type="radio" name="sex" value="Pan"/> Pan
+			</div>
+			
+			<p>
+				<label for="imie">Imię </label>
+				<input  type="text" required pattern="[A-Z]" title="imie"/>
+			</p>
+			<p>
+				<label for="nazwisko">Nazwisko</label>
+				<input type="text" required pattern="[A-Z]" title="nazwisko"/></p>
+			<p>
+				<label for="ulica">Ulica</label>
+				<input type="text" required pattern="[A-Z]" title="ulica"/></p>
+			<p>
+				<label for="KodPocztowy">Kod pocztowy </label>
+				<input type="text" name="country_code" pattern="[0-9]{2}\-[0-9]{3}" title="Format xx-xxx"/></p>
+			<p>
+				<label for="miejscowosc">Miejscowość</label>
+				<input type="text" required pattern="[A-Z]" title="miejscowosc"/></p>
+			<p>
+				<label for="NrTelefonu">Nr telefonu</label>
+				<input type="number" title="komorka"/></p>
+			<p>	
+				<label for="email">Adres email</label>
+				<input type="email" title="email"/></p>
+			
+			<p class="pukpuk" >Sposób powiadomienia
+				<input type="checkbox" name="TelSms" />
+				<label for="TelSms">Telefon/SMS</label></br>
+				<input type="checkbox" name="email" />
+				<label for="email">e-mail</label> 				
+			</p>
+		</article>
+		
+		<article class="czesc2">
+			<p class="naglowek"> Reklamowany produkt	</p>
+			
+			<p>	<label for="asortyment">Asortyment</label>
+				<select name="asortyment">
+					<option value=""></option>
+					<option value="tablet">Tablet </option>
+					<option value="laptop">Laptop </option>
+					<option value="desktop">Desktop</option>
+								
+				</select>	
+			
+			</p>
+			<p>
+				<label for="sn">Numer seryjny</label>
+				<input type="text" required pattern="[A-Z]" title="numer seryjny"/></p>
+			<p>
+				<label for="uwagi">Uwagi </label>
+				<input type="text" required pattern="[A-Z]" title="uwagi"/></p>
+		</article>
+		
+		<article class="czesc3">
+			<p class="naglowek">Dane zgłoszenia</p>
+			<p>
+				<label for="DokumentZakupu">Numer dokumentu zakupu</label>
+				<input type="text" required pattern="[A-Z] title="NrDokumentu"/></p>
+			<p>
+				<label for="data zakupu">Data zakupu</label>
+				<input type="date" name="zakup"></p>
+			<p>
+				<label for="data wady">Data powstania wady</label>
+				<input type="date" name="wada">
+			</p>
+			<p>
+				<label for="przyczyna wady">Przyczyna powstania wady</label>	
+				<input type="text" required pattern="[A-Z] title="PrzyczynaWady"/></p>	
+			<p>
+				<label for="opis wady">Opis wady</label>
+				<textarea id="OpisWady" name="OpisWady"></textarea></p>
+			<p>
+				<label for="wymagania reklamujacego">Żądanie reklamującego </label>
+				<select name="ZadanieReklamujacego">
+					<option value=""></option>
+					<option value="ZwrotPieniedzy"> Zwrot pieniędzy </option>
+					<option value="naprawa"> Naprawa </option>
+					<option value="wymiana"> Wymiana </option>
+				</select>
+			</p>
+		
+		</article>
+		
+		
+
+<!-- stopka -->
+	<footer>
+			
+	</footer>
+	</body>
+</html> 	
