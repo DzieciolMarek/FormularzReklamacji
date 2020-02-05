@@ -1,2 +1,2 @@
 # FormularzReklamacji
-zrobić validacje pol
+
